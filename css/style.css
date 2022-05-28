@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+}
+.navbar-brand {
+  margin-left: 5rem;
+}
+#navbarText {
+  margin-right: 15rem;
+}
+#home {
+  background-color: #fef4e8;
+  padding-top: 3rem;
+  padding-bottom: 6.9rem;
+}
+.text-box {
+  margin-top: 13rem;
+}
+.img-box {
+  margin-top: 8rem;
+}
+:active,
+:hover,
+:focus {
+  outline: 0 !important;
+  outline-offset: 0;
+}
+a:hover {
+  text-decoration: none;
+}
+a:hover {
+  color: #f62c25 !important;
+  font-weight: 800;
+  transition: all 0.3s;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+.nav-link {
+  color: #e67e22;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+.navigation-wrap {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  z-index: 1000;
+  padding: 1rem;
+}
+.navigation-wrap .nav-item {
+  padding: 0 0.625rem;
+}
+.main-btn {
+  margin: 0 0.5rem;
+  padding: 0.4rem;
+  display: inline-block;
+  line-height: 1.5rem;
+  background-color: #e67e22;
+  border: 0.18rem solid #e67e22;
+  color: white;
+  font-weight: 600;
+  text-transform: capitalize;
+  box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+  transition: ease-in all 0.5s;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  border-radius: 5px;
+}
+.main-btn:hover {
+  background-color: white;
+  color: #e67e22;
+}
+.white-btn {
+  margin: 0 1.5rem;
+  padding: 0.4rem;
+  line-height: 1.5rem;
+  border: 0.18rem solid white;
+  background-color: white;
+  color: #555;
+  font-weight: 600;
+  text-transform: capitalize;
+  box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+  font-size: 1.1rem;
+  border-radius: 5px;
+  transition: ease-in all 0.5s;
+}
+.white-btn:hover {
+  /* background-color: transparent; */
+  color: #e67e22;
+  border: 0.18rem solid white;
+}
+.su-btn {
+  margin: 0 1.5rem;
+  padding: 0.4rem;
+  /* line-height: 1.5rem; */
+  border: 0.18rem solid white;
+  background-color: #f62c25;
+  color: white;
+  font-weight: 400;
+  text-transform: capitalize;
+  box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+  /* font-size: 1.1rem; */
+  border-radius: 5px;
+  transition: ease-in all 0.5s;
+}
+.su-btn:hover {
+  background-color: transparent;
+  color: #f62c25;
+  border: 0.18rem solid #f62c25;
+}
+.navbar-toggler {
+  outline: unset;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 100%;
+  font-weight: 400;
+}
+
+/* Custom CSS */
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #555;
+  line-height: 1.05;
+  padding-right: 13rem;
+}
+.text-box p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #333;
+  line-height: 1.5;
+  padding-right: 10rem;
+  margin-top: 2rem;
+}
+nav {
+  background-color: #fff;
+}
+.delivered-meals {
+  display: flex;
+}
+.delivered-imgs {
+  display: flex;
+}
+.delivered-imgs img {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  border: 2px solid #fef4e8;
+}
+/* Footer CSS */
+footer {
+  background-color: rgba(230, 126, 34, 0.6);
+  padding: 0 13rem;
+  box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+  position: fixed;
+  bottom: 0;
+}
+
+.slinks a {
+  padding: 0 10px;
+  color: white;
+}
+.slinks a:hover {
+  color: #e67e22;
+  transition: ease-in all 0.4s;
+}
+.icons {
+  padding-bottom: 0.5rem;
+}
+.as {
+  margin-bottom: 0;
+}
+/* Menu CSs */
+.menu {
+  margin: 12rem auto;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 15%;
+}
+.card img {
+  width: 200px;
+  height: 200px;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.m {
+  display: flex;
+  justify-content: space-between;
+}
+.menu h4 {
+  text-align: center;
+}
+.menu p {
+  text-align: center;
+}
+.menu a {
+  margin-left: 30px;
+}
+.menu h2 {
+  color: #555;
+}

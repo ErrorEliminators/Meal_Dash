@@ -1,0 +1,13 @@
+:root {
+  --Primary-color: #e67e22;
+  --secondary-color: #fef4e8;
+  --third-color: #f62c25;
+  --white-color: #fff;
+  --text-color: #555;
+  --text-gray: #333;
+  --black-color: #000;
+  --primary-font: "Poppins", sans-serif;
+  --secondary-font: "Roboto", sans-serif;
+}
+
+/* FOnt-Size USed::16px=1rem */

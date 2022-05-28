@@ -1,108 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Meal Dash</title>
-  <link rel="shortcut icon" href="images/asian_food_chopsticks_how_bowl_icon_142410.png" type="image/x-icon" />
-  <link rel="stylesheet" href="style1.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Sora:wght@400;600;700&display=swap"
-    rel="stylesheet" />
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</head>
-
-<body>
-  <header class="container1">
-    <div class="l1">
-      <a href="index.html"> <img class="logo" src="images/LOGO.png"></a>
-    </div>
-    <nav>
-      <a href="our_menu.html" target="_self">Menu</a>
-      <a href="">Reviews</a>
-    </nav>
-  </header>
-  <section class="main">
-    <div class="main-text-box container">
-      <pre class="heading-pirmary">
-A healthy meal 
-delivered to your door, 
-every single day
-    </pre>
-      <pre class="main-description">
-The smart 365-days-per-year food subscription that will make you eat
-healthy again. Tailored to your personal tastes and nutritional needs.
-We have delivered 250,000+ meals last year!
-    </pre>
-      <a href="#" class="btn">Join Now</a>
-      <a href="Contact_Us.html"  target="_blank" class="btn">Contact Us</a>
-    </div>
-  </section>
-
-  <section class="Menu">
-    <div class="images">
-      <h3>Menu</h3>
-      <div class="idali_image">
-        <img src="images/Idli-Sambar.jpg">
-        <div class="data">
-          <p>Idali Sambhar </p>
-          <h5>Price : 150.00</h5>
-          <button type="submit">ORDER</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MEAL DASH</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <!-- OWn CSS -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/responsive-style.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navigation-wrap">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img height="50px" src="images/logo.png"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <!-- HEre the i tag is used to take button symbol from font awesome icons Initially this button was used by bootstrap--<span class="navbar-toggler-icon"></span> -->
+            <i class="fas fa-stream navbar-toggler-icon"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Explore Foods">Explore Foods</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonial">Reviews</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/Contact_Us_New.html" target="_blank">Queries</a>
+              </li>
+              <li><button class="btn main-btn">1200 504 608</button>    
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- section-1 top-banner -->
+    <section id="home">
+      <div class="container hero">
+        <div class="row">
+          <div class="col text-box mx-auto">
+            <h1>A healthy meal delivered to your door, every single day</h1>
+            <p>
+              The smart 365-days-per-year food subscription that will make you
+              eat healthy again. Tailored to your personal tastes and
+              nutritional needs.
+            </p>
+            <div class="mt-4">
+              <button class="main-btn">
+                Order now <i class="fas fa-shopping-basket ps-3"></i>
+              </button>
+              <button class="white-btn ms-lg-4 mt-lg-0 mt-4"  data-bs-toggle="modal" href="#exampleModalToggle" role="button">
+                Log In <i class="fas fa-angle-right ps-3"></i>
+              </button>
+              <!-- Modal -->
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalToggleLabel">Sign-Up/Login</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">Password</label>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-outline-primary">Login</button>
+            <button class="btn btn-outline-success" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Sign-Up</button>
+          </div>
         </div>
       </div>
-      <div class="idali_image">
-        <img src="images/mygov16065373439429073.jpg">
-        <div class="data">
-          <p>Dhosa</p>
-          <h5>Price : 150.00</h5>
-          <button type="submit">ORDER</button>
-        </div>
-      </div>
-      <div class="idali_image">
-        <img src="images/Medu-vada-with-sambar-WS-1.jpg">
-        <div class="data">
-          <p>Meduvada</p>
-          <h5>Price : 150.00</h5>
-          <button type="submit">ORDER</button>
-        </div>
-      </div>
-      <div class="idali_image">
-        <img src="images/samosa-recipe-500x375.jpg">
-        <div class="data">
-          <p>Samosa</p>
-          <h5>Price : 150.00</h5>
-          <button type="submit">ORDER</button>
+    </div>
+    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalToggleLabel2">Create Your account</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="floatingInput" placeholder="Name">
+              <label for="floatingInput">Name</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="number" class="form-control" id="floatingInput" placeholder="Enter your phone number">
+              <label for="floatingInput">Phone No.</label>
+            </div>
+            <div class="form-floating">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">Create new password</label>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn su-btn" >Create your account</button>
+            <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Back to first</button>
+          </div>
         </div>
       </div>
     </div>
-
-  </section>
-  <footer>
-    <div class="slinks">
-      <p>Follow us on:</p>
-      <div class="icons">
-        <a href="https://www.instagram.com/?hl=en" target="_blank">
-          <ion-icon name="logo-instagram" size="large"></ion-icon>
-        </a>
-        <a href="https://www.facebook.com/">
-          <ion-icon name="logo-facebook" size="large"></ion-icon>
-        </a>
-        <a href="https://twitter.com/explore">
-          <ion-icon name="logo-twitter" size="large"></ion-icon>
-        </a>
+    <!-- <a class="btn white-btn" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Open first modal</a> -->
+            </div>
+          </div>
+          <div class="col-6 img-box">
+            <img width="100%" height="548px" src="images/main.png" alt="" />
+          </div>
+        </div>
       </div>
-    </div>
-    <p class="as">
-      By continuing past this page, you agree to our Terms of Service, Cookie
-      Policy, Privacy Policy and Content Policies. All trademarks are
-      properties of their respective owners. 2008-2022 © MEAL DASH™ Ltd.
-      All&rights reserved
-    </p>
-  </footer>
-</body>
+      <!-- Menu -->
+      <div class="menu" id="Explore Foods">
+      <div class="container pt-5">
+        <h2>Menu</h2>
+          <div class="m ">
+          <div class="card" >
+              <img src="images/Idli-Sambar.jpg" style="width: 100%;">
+              <div class="card-body">
+                <h4>Idli</h4>
+                <p>150.00</p>
+                <a href="#" class="btn btn-primary">Order</a>
+              </div>
+          </div>
+          <div class="card">
+            <img src="images/mygov16065373439429073.jpg" style="width: 100%;">
+            <div class="card-body">
+              <h4>Dosa</h4>
+              <p>150.00</p>
+              <a href="#" class="btn btn-primary">Order</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/Medu-vada-with-sambar-WS-1.jpg" style="width: 100%;">
+            <div class="card-body">
+              <h4>Meduvada</h4>
+              <p>150.00</p>
+              <a href="#" class="btn btn-primary">Order</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/samosa-recipe-500x375.jpg" style="width: 100%;">
+            <div class="card-body">
+              <h4>Samosa</h4>
+              <p>150.00</p>
+              <a href="#" class="btn btn-primary">Order</a>
+            </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="slinks">
+        <p>Follow us on:</p>
+        <div class="icons">
+          <a href="https://www.instagram.com/?hl=en" target="_blank"
+            ><ion-icon name="logo-instagram" size="large"></ion-icon
+          ></a>
+          <a href="https://www.facebook.com/"
+            ><ion-icon name="logo-facebook" size="large"></ion-icon
+          ></a>
+          <a href="https://twitter.com/explore"
+            ><ion-icon name="logo-twitter" size="large"></ion-icon
+          ></a>
+        </div>
+      </div>
+      <p class="as">
+        By continuing past this page, you agree to our Terms of Service, Cookie
+        Policy, Privacy Policy and Content Policies. All trademarks are
+        properties of their respective owners. 2008-2022 © MEAL DASH™ Ltd. All &
+        Rights reserved
+      </p>
+    </footer>
+    
+    <!-- Modal FOR Contact Us (1 used in suffix)-->
+    
 
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
 </html>
